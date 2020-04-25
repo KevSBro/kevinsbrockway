@@ -32,9 +32,39 @@ const projects = [
     name: "This Site",
     purpose: "My personal web site.",
     description:
-      "Since most of the code that I've written was done for Vulcan, it is proprietary and not available to the public. So I decided to write some simple web tools using React for demonstration, and this is the index of all that work.",
+      "Since most of the code that I've written was done for Vulcan, it is proprietary and not publicly available. So I decided to develop some basic web sites (using React) for demonstration, and this is the index of all that work.",
     link_git: "https://github.com/KevSBro/kevinsbrockway",
     link_web: null,
+    image: "",
+  },
+  {
+    id: "p2",
+    type: "Professional Project",
+    name: "Allen Coral Atlas",
+    purpose: "A publicly available website that I helped develop.",
+    description: (
+      <div style={{ textAlign: "left" }}>
+        I was one of several developers working on the Allen Coral Atlas, so not
+        everything that you see there was developed by me, but I did contribute
+        some significant features for the (React) project:
+        <ul>
+          <li>
+            Developed several new components, including the new
+            registration/sign-in forms which users will use to create an
+            account, then save AOI in a private, sharable list (a key product
+            requirement).
+          </li>
+          <li>
+            Improved the Atlas’ drawing tools using the MapBox API, including
+            cursors, tooltips and other visual cues, which enabled easier AOI
+            creation, the main product feature.
+          </li>
+          <li>Designed and developed the Mapbox search tool.</li>
+        </ul>
+      </div>
+    ),
+    link_git: null,
+    link_web: "https://allencoralatlas.org",
     image: "",
   },
 ];

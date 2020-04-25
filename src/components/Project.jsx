@@ -21,9 +21,13 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 14,
+    opacity: 0.5,
   },
   pos: {
     marginBottom: 12,
+  },
+  cardActions: {
+    backgroundColor: "#f9f9f9",
   },
 });
 
@@ -45,33 +49,37 @@ export const Project = ({ project }) => {
         >
           {project.type}
         </Typography>
-        <Typography variant="h5" component="h2">
-          {project.name}
+        <Typography color="textPrimary" variant="h5" component="h2">
+          <a href={project.link_web}>{project.name}</a>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {project.purpose}
         </Typography>
-        <Typography variant="body2" component="p">
+        <Typography variant="body2" component="p" style={{ textAlign: "left" }}>
           {project.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button
-          size="small"
-          onClick={() => {
-            gotoSite(project.link_git);
-          }}
-        >
-          <GitHubIcon />
-        </Button>
+      <CardActions className={classes.cardActions}>
+        {project.link_git && (
+          <Button
+            color="primary"
+            size="small"
+            onClick={() => {
+              gotoSite(project.link_git);
+            }}
+          >
+            <GitHubIcon />
+          </Button>
+        )}
         {project.link_web && (
           <Button
+            color="primary"
             size="small"
             onClick={() => {
               gotoSite(project.link_web);
             }}
           >
-            AWS
+            Website
             <LaunchIcon />
           </Button>
         )}

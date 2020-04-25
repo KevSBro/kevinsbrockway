@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import Fade from "@material-ui/core/Fade";
 
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -51,7 +52,7 @@ export const Navbar = () => {
   };
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" color="default">
+      <AppBar position="fixed" color="primary">
         <Toolbar>
           <IconButton
             edge="start"
@@ -70,6 +71,7 @@ export const Navbar = () => {
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClick_closeActions}
+            TransitionComponent={Fade}
           >
             <MenuItem onClick={goToResume}>R&eacute;sum&eacute;</MenuItem>
             <MenuItem onClick={mailTo}>Contact Me</MenuItem>

@@ -4,6 +4,8 @@ import "typeface-roboto";
 
 import { Navbar } from "./components/Navbar";
 
+//import { useTheme } from '@material-ui/core/styles';
+
 import Container from "@material-ui/core/Container";
 import { Biography } from "./components/Biography";
 import { Resume } from "./components/Resume";

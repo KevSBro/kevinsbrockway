@@ -25,3 +25,12 @@ footer {
   bottom: 0px;
   left: 10px;
 }
+
+.linkSpan {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 250ms opacity;
+}
+.linkSpan:hover {
+  opacity: 1;
+}
