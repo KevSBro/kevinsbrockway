@@ -10,16 +10,14 @@ import { Resume } from "./components/Resume";
 import { ProjectList } from "./components/ProjectList";
 import { Footer } from "./components/Footer";
 
-// Material UI
-//import Paper from "@material-ui/core/Paper";
-
-//<img src="./favicon.ico" alt="" />
-
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Container maxWidth="sm" style={{ paddingBottom: "20px" }}>
+      <Container
+        maxWidth="sm"
+        style={{ paddingBottom: "20px", paddingTop: "50px" }}
+      >
         <Biography />
         <ProjectList />
         <Resume />
