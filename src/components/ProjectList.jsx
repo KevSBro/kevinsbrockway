@@ -19,9 +19,23 @@ const projects = [
     id: "p1",
     type: "Personal Project",
     name: "Camera/Lens Combinations",
-    purpose: "A fun way to practice using modern React code.",
-    description:
-      "This tool uses 3 lists (cameras, lenses, and teleconverters) and allows the users to combine them to get the effective focal length of the lenses using crop sensor cameras. The list items can be modified, although all changes are session based.",
+    purpose: "Sensor size changes effective focal length",
+    description: (
+      <div>
+        <p>
+          This tool uses 3 lists (cameras, lenses, and teleconverters) and
+          allows the users to combine them to get the effective focal length of
+          the lenses using crop sensor cameras. The list items can be modified,
+          although, right now, all changes are session based. This project is
+          still being developed.
+        </p>
+        <ul>
+          <li>React</li>
+          <li>Material UI</li>
+          <li>Hosted on AWS S3</li>
+        </ul>
+      </div>
+    ),
     link_git: "https://github.com/KevSBro/camera-lens-combo",
     link_web: "https://cameralenscombo.s3.us-west-2.amazonaws.com/index.html",
     image: "",
@@ -31,8 +45,21 @@ const projects = [
     type: "Personal Project",
     name: "This Site",
     purpose: "My personal web site.",
-    description:
-      "Since most of the code that I've written was done for Vulcan, it is proprietary and not publicly available. So I decided to develop some basic web sites (using React) for demonstration, and this is the index of all that work.",
+    description: (
+      <div>
+        <p>
+          Since most of the code that I've written was done for Vulcan, it is
+          proprietary and not publicly available. So I decided to develop some
+          basic web sites (using React with Material Design) for demonstration,
+          and this is the index of all that work.
+        </p>
+        <ul>
+          <li>React</li>
+          <li>Material UI</li>
+          <li>Hosted on AWS S3</li>
+        </ul>
+      </div>
+    ),
     link_git: "https://github.com/KevSBro/kevinsbrockway",
     link_web: null,
     image: "",
